@@ -10,8 +10,8 @@ export default function Home() {
       const now = new Date();
 
       const totalDays = Math.ceil((targetDate - now) / (1000 * 60 * 60 * 24));
-      const weeks = Math.floor(totalDays / 7);
-      const days = totalDays % 7;
+      const weeks = Math.floor(totalDays / 7) * -1;
+      const days = (totalDays % 7) * -1;
 
       setTimeLeft({ weeks, days });
     };
