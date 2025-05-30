@@ -16,22 +16,14 @@
   font-family: var(--font-geist-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
 .main {
   display: flex;
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .main ol {
@@ -171,6 +163,7 @@ a.secondary {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
 }
 
 .main {
@@ -220,4 +213,10 @@ a.secondary {
   color: #666;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+.logo {
+  max-width: 300px;
+  width: 20rem;
+  height: auto;
 }

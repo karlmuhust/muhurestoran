@@ -1,0 +1,22 @@
+.infoContainer {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 100;
+}
+
+.infoItem {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.infoItem:hover {
+  text-decoration: underline;
+}
