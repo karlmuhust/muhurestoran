@@ -5,10 +5,6 @@ import InfoContainer from "../components/InfoContainer";
 import Logo from "../components/Logo";
 
 export default function Home() {
-  const [timeLeft, setTimeLeft] = useState({ weeks: 0, days: 0 });
-
-  // ... existing useEffect code ...
-
   return (
     <div className={styles.container}>
       <InfoContainer />
